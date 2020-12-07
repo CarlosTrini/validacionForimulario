@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <title>Document</title>
+    </head>
+
+    <body class="fondo">
+        <header>
+            <h1>Área de registro</h1>
+        </header>
+
+        <div class="contenedor">
+            <form action="#" class="formulario" id="formulario">
+
+
+                <div class="contenedor-campos" id="grupo-usuario">
+                    <label for="usuario">Usuario:</label>
+                    <div class="contenedor-input">
+                        <input type="text" class="input" name="usuario" id="usuario" placeholder="Ingrese su usuario">
+                        <i class="fas fa-times iconos-validacion-error"></i>
+                        <i class="fas fa-check iconos-validacion-exito"></i>
+                    </div>
+                    <div class="error-campo">
+                        <p>El usuario debe contener 4 - 16 dígitos, sin espacios. Solo se admiten: Guión bajo y medio,
+                            letras y números</p>
+                    </div>
+                </div> <!-- USUARIO -->
+
+                <div class="contenedor-campos" id="grupo-nombre">
+                    <label for="nombre">Nombre:</label>
+                    <div class="contenedor-input">
+                        <input type="text" class="input" name="nombre" id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
+                        <i class="fas fa-times iconos-validacion-error"></i>
+                        <i class="fas fa-check iconos-validacion-exito"></i>
+                        
+                    </div>
+                    <div class="error-campo">
+                        <p>El nombre debe de ser sin espacios. Solo se admiten: Guión bajo y medio, letras y números</p>
+                    </div>
+                </div> <!-- NOMBRE -->
+
+                <div class="contenedor-campos" id=" grupo-contrasena">
+                    <label for="contrasena">Contraseña:</label>
+                    <div class="contenedor-input">
+                        <input type="password" autocomplete="off" class="input" name="contrasena" id="contrasena"
+                            placeholder="Ingrese su contraseña">
+                        <i class="fas fa-times iconos-validacion-error"></i>
+                        <i class="fas fa-check iconos-validacion-exito"></i>
+                    </div>
+                    <div class="error-campo">
+                        <p>Contraseña de mínimo 6 dígitos</p>
+                    </div>
+                </div> <!-- CONTRASEÑA -->
+
+                <div class="contenedor-campos" id=" grupo-contrasena-dos">
+                    <label for="contrasena-dos">Contraseña:</label>
+                    <div class="contenedor-input">
+                        <input type="password" autocomplete="off" class="input" name="contrasena-dos" id="contrasena-dos"
+                            placeholder="Rectifique su contraseña">
+                        <i class="fas fa-times iconos-validacion-error"></i>
+                        <i class="fas fa-check iconos-validacion-exito"></i>
+                    </div>
+                    <div class="error-campo">
+                        <p>Las contraseñas no son iguales</p>
+                    </div>
+                </div> <!-- CONTRASEÑA COMPROBACION-->
+
+
+                <div class="contenedor-campos" id="grupo-correo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <div class="contenedor-input">
+                        <input type="email" class="input" name="correo" id="correo" placeholder="Alguien@correo.com"  autocomplete="off">
+                        <i class="fas fa-times iconos-validacion-error"></i>
+                        <i class="fas fa-check iconos-validacion-exito"></i>
+                    </div>
+                    <div class="error-campo">
+                        <p>Verifica que la dirección sea la correcta. Necesita un "@" y un dominio</p>
+                    </div>
+                </div> <!-- CORREO -->
+
+                <div class="contenedor-campos" id="grupo-telefono">
+                    <label for="telefono">Teléfono:</label>
+                    <div class="contenedor-input">
+                        <input type="tel" class="input" autocomplete="off" name="telefono" id="telefono" placeholder="1234567890">
+                        <i class="fas fa-times iconos-validacion-error"></i>
+                        <i class="fas fa-check iconos-validacion-exito"></i>
+                    </div>
+                    <div class="error-campo">
+                        <p>El teléfono de contacto es necesario. Máximo 10 dígitos. Solo números</p>
+                    </div>
+                </div> <!-- TELEFONO -->
+
+                <div class="contenedor-campos " id="grupo-terminos-condiciones">
+                    <label>
+                        <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" value="1"
+                            class="formulario-terminos">
+                        Acepto términos y condiciones
+                    </label>
+
+                </div> <!-- TERMINOS Y CONDICIONES -->
+
+                <div class="contenedor-mensaje" id="contenedor-mensaje1">
+                    <p>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <b>Error</b> Todos los campos deben de estar correctos
+                    </p>
+                </div>
+                
+                <div class="contenedor-mensaje " id="contenedor-mensaje2">
+                    <p>
+                        <i class="fas fa-check"></i>
+                        <b>Bien!</b> Mensaje enviado exitosamente
+                    </p>
+                </div>
+
+                <div class="contenedor-boton">
+                    <input type="submit" value="Enviar" class="boton-enviar" id="enviar">
+                </div>
+
+            </form>
+        </div>
+
+
+
+        <footer></footer>
+
+
+
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
